@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Nikola Stankovic</p>
+    <?php 
+    $a = 3;
+    $b = 5;
+    $c = 10;
+    $zbir = $a + $b + $c;
+    echo '"Zbir brojeva a, b i c je'. "&nbsp". "$zbir".'"';
+    ?>
 </body>
 </html>
