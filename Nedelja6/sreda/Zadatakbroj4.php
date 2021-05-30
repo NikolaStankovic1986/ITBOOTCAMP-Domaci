@@ -8,17 +8,30 @@
 </head>
 <body>
 2. Написати функцију која враћа div унутар којег се налази N span елемената који за текст имају редом бројеве од 1 до N
-<?php 
+<!-- <!-- <?php  
 
-function kreirajSpan($brojSpanova){
-    echo "<div>";
+// function kreirajSpan($brojSpanova){
+//     echo "<div>";
+//     for ($i=1;$i<=$brojSpanova;$i++){
+//         echo "<span>".$i."</span>"."<br>";
+//     }
+//     echo "</div>";
+// }
+
+// echo kreirajSpan(4)."<br/>";
+?>
+<?php  
+
+function kreirajSpan2($brojSpanova){
+    $div= "<div>";
     for ($i=1;$i<=$brojSpanova;$i++){
-        echo "<span>".$i."</span>"."<br>";
+        $div.= "<span>".$i."</span>"."<br>";
     }
-    echo "</div>";
+    $div.= "</div>";
+    return $div;
 }
 
-echo kreirajSpan(4);
+echo kreirajSpan2(4);
 ?>
 </body>
 </html>
