@@ -11,15 +11,12 @@
 <?php 
 
 function vracaVecibroj($a, $b, $c){
-    if ($a > $b){
+    if ($a > $b and $a > $c){
         return $a;
     } elseif($b > $c){
         return $b;
 
-    } elseif($a > $c) {
-        return $a;
-
-    } else {
+    }else {
         return $c;
         
     }
